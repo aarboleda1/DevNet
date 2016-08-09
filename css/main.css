@@ -1,0 +1,20 @@
+body {
+  background-color: #F5F8FA;
+}
+
+/* Navbar */
+.navbar {
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  border-bottom: solid 1px #E5E5E6;
+}
+
+/* User Profile Card */
+.profile-card {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: white;
+}
