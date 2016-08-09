@@ -17,26 +17,26 @@
       </ul>
     </md-content>
 
-    <md-content layout="row" layout-xs="column" layout-margin>
+    <md-content layout="row" ng-controller="DevAppCtrl" layout-xs="column" layout-margin>
       <md-card class="profile-card">
         <img class="user-cover-image" src="images/cover-photo.jpg" />
         <div class="name-pic-section" layout="row">
           <img class="user-profile-image" src="images/profile-picture.jpg" />
-          <p class="md-title">Michael mitrakos</p>
+          <p class="md-title">{{ currentUser.name }}</p>
         </div>
 
         <div layout="row" class="user-stats" layout-margin layout-padding>
           <div class="followers profile-stat" flex>
             <p class="md-subhead">Followers</p>
-            <p class="md-title">123</p>
+            <p class="md-title">{{ currentUser.followers }}</p>
           </div>
           <div class="following profile-stat" flex>
             <p class="md-subhead">Following</p>
-            <p class="md-title">26</p>
+            <p class="md-title">{{ currentUser.following }}</p>
           </div>
           <div class="commits profile-stat" flex>
             <p class="md-subhead">Commits</p>
-            <p class="md-title">1500</p>
+            <p class="md-title">{{ currentUser.commits }}</p>
           </div>
         </div>
       </md-card>
@@ -59,18 +59,41 @@
       </md-card>
     </md-content>
 
-    <md-content layout="row" layout-xs="column" layout-margin>
+    <md-content layout="row" layout-xs="column" ng-controller="DevAppCtrl" ng-cloak layout-margin>
       <md-card class="trending-card" layout-padding flex>
         <p class="md-headline heading">Trending Projects</p>
         <md-divider></md-divider>
+        <div class="trending-projects" ng-repeat="project in testTrendingProjects">
+          <md-card class="project-card" layout-padding>
+            <div layout="row">
+              <p class="md-title" flex><strong>{{ project.name }}</strong></p>
+              <p class="md-subhead project-language" flex>{{ project.language }}</p>
+            </div>
+            <p class="md-subhead">{{ project.description }}</p>
+            <div layout="row">
+              <div flex>
+                <strong>Collaborators: {{ project.collaborators }}</strong>
+              </div>
+              <div flex>
+                <strong>Forks: {{ project.forks }}</strong>
+              </div>
+              <div flex>
+                <strong>Issues: {{ project.issues }}</strong>
+              </div>
+            </div>
+          </md-card>
+        </div>
       </md-card>
       <md-card class="stream-card" layout-padding flex>
         <p class="md-headline heading">Follower Feed</p>
         <md-divider></md-divider>
+        <div class="follower-feed">
+
+        </div>
       </md-card>
     </md-content>
 
-
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>

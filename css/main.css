@@ -119,3 +119,12 @@ li a:hover {
   border-radius: 5px;
   height: 100%;
 }
+
+.project-card {
+  background-color: #F5F8FA;
+}
+
+.project-language {
+  right: 0;
+  text-align: right;
+}
