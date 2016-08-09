@@ -2,6 +2,18 @@ body {
   background-color: #F5F8FA;
 }
 
+md-content {
+  background-color: #F5F8FA;
+}
+
+.heading {
+  text-align: center;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
 /* Navbar */
 .navbar {
   top: 0;
@@ -11,10 +23,99 @@ body {
   border-bottom: solid 1px #E5E5E6;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    color: #66757F;
+}
+
+li a {
+    display: block;
+    color: #66757F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+  border-bottom: solid 5px #169998;
+  color: #169998;
+}
+
+.active {
+    border-bottom: solid 5px #169998;
+}
+
+.right-tab {
+  float: right;
+}
+
 /* User Profile Card */
 .profile-card {
   width: 350px;
+  min-width: 350px;
   height: 250px;
+  overflow: hidden;
   border-radius: 5px;
-  background-color: white;
+}
+
+.user-stats {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.user-cover-image {
+  height: 50% !important;
+  width: 100%;
+  top: 0 !important;
+}
+
+.user-profile-image {
+  height: 95px !important;
+  width: 85px;
+  border: solid 4px white;
+  margin-top: -45px;
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.profile-stat p {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Search Card */
+.search-card {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.search-bar {
+  margin-top: 45px;
+  width: 100%;
+}
+
+.search-bar input{
+  margin-top: 5px;
+}
+
+/* Updates Streaming Card */
+.stream-card {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Trending Card */
+.trending-card {
+  width: 50%;
+  border-radius: 5px;
+  height: 100%;
 }
