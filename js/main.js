@@ -62,10 +62,49 @@ devApp.controller("DevAppCtrl" ,function($scope) {
   //   $(".trending-projects").append("<div class='trendingName'>" + trend.name + "</div>");
   // });
 
-  $scope.testFeed = [
+  $scope.developerFeed = [
     {
-
+      name: "Anton",
+      recentProject: "DevNet",
+      recentProjectUrl: "www.github.com/devnet",
+      recentProjectForks: 32,
+      openSourceStatus: "Open-Source"
     },
+    {
+      name: "Mark Zuckerburg",
+      recentProject: "The Facebook",
+      recentProjectUrl: "www.github.com/facebook",
+      recentProjectForks: 8932,
+      openSourceStatus: "Open-Source"
+    },
+    {
+      name: "Dick Costello",
+      recentProject: "Project Twitter",
+      recentProjectUrl: "www.github.com/twitter",
+      recentProjectForks: 7562,
+      openSourceStatus: "Not Open-Source"
+    },
+    {
+      name: "Michael Flores",
+      recentProject: "Project Pandemic",
+      recentProjectUrl: "www.github.com/pandemic",
+      recentProjectForks: 42,
+      openSourceStatus: "Open-Source"
+    },
+    {
+      name: "Jonathan Chu",
+      recentProject: "School Project",
+      recentProjectUrl: "www.github.com/school",
+      recentProjectForks: 2,
+      openSourceStatus: "Open-Source"
+    },
+    {
+      name: "Nick Mitrakos",
+      recentProject: "Olympic Website",
+      recentProjectUrl: "www.github.com/olympics",
+      recentProjectForks: 532,
+      openSourceStatus: "Not Open-Source"
+    }
   ]
 
 })

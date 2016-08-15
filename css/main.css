@@ -1,9 +1,25 @@
 body {
-  background-color: #F5F8FA;
+  background-color: #5D6DBE;
+}
+
+html {
+  background-color: #5D6DBE;
 }
 
 md-content {
-  background-color: #F5F8FA;
+  background-color: #5D6DBE;
+}
+
+md-button {
+    color: #FF5252;
+}
+
+a:not(.md-button) {
+    color: #FF5252;
+}
+
+.right {
+  float: right;
 }
 
 .heading {
@@ -44,12 +60,12 @@ li a {
 }
 
 li a:hover {
-  border-bottom: solid 5px #169998;
-  color: #169998;
+  border-bottom: solid 5px #5D6DBE;
+  color: #5D6DBE;
 }
 
 .active {
-    border-bottom: solid 5px #169998;
+    border-bottom: solid 5px #5D6DBE;
 }
 
 .right-tab {
@@ -121,7 +137,7 @@ li a:hover {
 }
 
 .project-card {
-  background-color: #F5F8FA;
+  background-color: #F9F9F9;
 }
 
 .project-language {
